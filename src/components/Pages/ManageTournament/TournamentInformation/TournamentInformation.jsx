@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { formatDate, formatPrice } from "~/utils/utils";
-import tournamentApi from "~/api/tournamentApi";
+import { formatDate, formatPrice } from "/src/utils/utils";
+import tournamentApi from "/src/api/tournamentApi";
 import Alert from "../../../Alert/Alert";
 
 function TournamentInformation(props) {
