@@ -19,10 +19,5 @@
             "source": "/projects/nbb-clients/assets/:filePath",
             "permanent": true
         }
-    ],
-    "rewrites": [
-        {
-            "source": "/projects/nbb-clients"
-        }
     ]
 }
