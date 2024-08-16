@@ -1,0 +1,24 @@
+/* This CSS can be placed within a <style> tag or in an external CSS file */
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .toggle-bg {
+    transition: background-color 0.3s;
+  }
+  
+  #remember-me:checked ~ .toggle-bg {
+    background-color: #7c3aed; /* Tailwind purple-600 */
+  }
+  
+  #remember-me:checked ~ .toggle-dot {
+    transform: translateX(100%);
+  }
+  

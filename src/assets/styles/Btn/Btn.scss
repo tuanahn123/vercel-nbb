@@ -1,0 +1,26 @@
+  .text-over-image {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .text-over-image .button-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+  }

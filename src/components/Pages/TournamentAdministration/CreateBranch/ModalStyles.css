@@ -1,0 +1,10 @@
+
+/* Thêm các kiểu CSS cho modal */
+.bracket-title {
+  background: linear-gradient(#4A40FF, #000675); /* Đổi thành màu bạn muốn */
+  color: white; /* Đổi màu chữ nếu cần */
+  padding: 10px;
+  text-align: center;
+  border-right: 1px solid #373737;
+  font-weight: 400;
+}

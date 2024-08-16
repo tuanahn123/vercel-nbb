@@ -1,0 +1,34 @@
+.tab-container {
+    display: flex;
+    background-color: #060612;
+  }
+  
+  .tab {
+    padding: 12px 50px;
+    text-align: center;
+    color: #A0A0A0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background: #1B1C20;
+    border: none;
+  }
+  
+  .tab:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  .tab:last-child {
+    border-top-right-radius: 10px;
+  }
+  
+  .tab.active, .tab:hover {
+    color: #FFFFFF;
+    background: linear-gradient(94deg, #254BFF -2.04%, #E011FF 105.85%);
+  }
+  
+  .tab-content {
+    background-color: #060612;
+    color: #FFFFFF;
+    border-top: none;
+  }
+  

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  body {
+    background: #050518;
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+/* Custom container styles */
+@layer utilities {
+  .container {
+    width: 100%;
+  }
+
+  @media (min-width: 576px) {
+    .container- {
+      width: 540px; /* For small screens */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      width: 720px; /* For medium screens */
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      width: 960px; /* For large screens */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px; /* For extra large screens */
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .container {
+      width: 1320px; /* For double extra large screens */
+    }
+  }
+
+  .container-fluid {
+    width: 100%;
+  }
+  .border-gradient {
+    border-image: linear-gradient(to right, #0c53ff, #e011ff) 1;
+  }
+  .scrollableSelect::-webkit-scrollbar {
+    background-color: none;
+    height: 8px;
+    width: 8px;
+    margin-top: 15px;
+  }
+
+  .scrollableSelect::-webkit-scrollbar-thumb {
+    background: #383d4d;
+    border-radius: 99em;
+    border: 6px solid none;
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}

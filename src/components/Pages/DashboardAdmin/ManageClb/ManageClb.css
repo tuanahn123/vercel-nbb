@@ -1,0 +1,5 @@
+.bg-manageClb {
+  border-radius: 20px;
+  background: linear-gradient(127deg, rgba(6, 11, 40, 0.74) 28.26%, rgba(10, 14, 35, 0.71) 91.2%);
+  backdrop-filter: blur(60px);
+}
