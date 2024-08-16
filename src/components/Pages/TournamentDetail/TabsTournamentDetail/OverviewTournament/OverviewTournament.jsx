@@ -1,8 +1,8 @@
 import React from "react";
-import bgRank1 from "../../../../../assets/images/TournamentDetail/bgRank1.svg";
-import bgRank2 from "../../../../../assets/images/TournamentDetail/bgRank2.svg";
-import bgRank3 from "../../../../../assets/images/TournamentDetail/bgRank3.svg";
-import avatar from "../../../../../assets/images/TournamentDetail/avt.svg";
+import bgRank1 from "../@assets/images/TournamentDetail/bgRank1.svg";
+import bgRank2 from "../@assets/images/TournamentDetail/bgRank2.svg";
+import bgRank3 from "../@assets/images/TournamentDetail/bgRank3.svg";
+import avatar from "../@assets/images/TournamentDetail/avt.svg";
 import { formatDate, formatPrice } from "../../../../../utils/utils";
 
 
