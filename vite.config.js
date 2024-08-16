@@ -7,6 +7,11 @@ export default defineConfig({
   css: {
     devSourcemap: true
   },
+  resolve: {
+    alias: {
+      '@assets': path.resolve(__dirname, 'src/assets')
+    }
+  },
   server: {
     port: 3000
   }
