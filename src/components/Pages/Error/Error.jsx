@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from "../../common/Navbar";
-import error from "@assets/images/Error/error.png";
-import btnError from "@assets/images/Error/btn-error.png";
+import error from "../../../assets/images/Error/error.png";
+import btnError from "../../../assets/images/Error/btn-error.png";
 import { Button } from "../../common/Button";
 import path from '../../../constants/path';
 

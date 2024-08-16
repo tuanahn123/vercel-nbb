@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import bgLogin from '@assets/images/Login-register/bg-login-register.png';
-import logoLogin from '@assets/images/Login-register/logo-login-register.png';
-import btnLogin from '@assets/images/Login-register/btn-login-register.png';
-import logoGoogle from '@assets/images/Login-register/logo-google.svg';
-import '@assets/styles/login/login.scss';
+import bgLogin from '../../../assets/images/Login-register/bg-login-register.png';
+import logoLogin from '../../../assets/images/Login-register/logo-login-register.png';
+import btnLogin from '../../../assets/images/Login-register/btn-login-register.png';
+import logoGoogle from '../../../assets/images/Login-register/logo-google.svg';
+import '../../../assets/styles/login/login.scss';
 import { Button } from '../../common/Button';
 import { googleOAuthUrl } from './_components/Google';
 import { Link, useNavigate } from 'react-router-dom';

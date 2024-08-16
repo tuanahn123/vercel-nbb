@@ -1,4 +1,4 @@
-import bg_upcoming_match from '@assets/images/HomePage/UpcomingMatch/background_upcoming_match.svg'
+import bg_upcoming_match from '../../../assets/images/HomePage/UpcomingMatch/background_upcoming_match.svg'
 
 const images = {
     bg_upcoming_match

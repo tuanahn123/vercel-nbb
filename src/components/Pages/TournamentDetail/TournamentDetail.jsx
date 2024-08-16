@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Tabs, Tab } from "../TournamentDetail/TabsTournamentDetail/TabsTournamentDetail";
 import OverviewTournament from "./TabsTournamentDetail/OverviewTournament/OverviewTournament";
 import ListPlayer from "./TabsTournamentDetail/ListPlayer/ListPlayer";
@@ -7,6 +7,7 @@ import { Footer } from "../../common/Footer";
 import { getIdFromNameId } from "../../../utils/utils";
 import { useParams } from "react-router-dom";
 import tournamentApi from "../../../api/tournamentApi";
+import CreateBranch from "../TournamentAdministration/CreateBranch/CreateBranch";
 function  TournamentDetail() {
     const idTournament = getIdFromNameId(useParams().idTournament); // Ensure nameId matches the param name in the route
     const [tournaments, setTournaments] = useState(null);
@@ -49,7 +50,7 @@ function  TournamentDetail() {
    return (         
         <div className="min-h-screen">
             <Navbar />
-            <div className="container mx-auto my-14" >
+            <div className=" mx-auto my-14" >
                 <div className="text-center text-[#fff] md:text-3xl lg:text-4xl text-lg sm:text-xl font-sora font-semibold">
                 <div className="text-center text-[#fff] md:text-3xl lg:text-4xl text-lg sm:text-xl font-sora font-semibold">
                     {tournaments && tournaments.name ? tournaments.name : 'Tên giải đấu không có'}
@@ -62,6 +63,7 @@ function  TournamentDetail() {
                             <OverviewTournament tournament ={tournaments} historyUser = {historyUser} />
                             </Tab>
                             <Tab label={"Nhánh đấu"}>
+                              <CreateBranch idTournament={idTournament} />
                             </Tab>
                             <Tab label={"Người chơi"}>
                             <ListPlayer historyUser = {historyUser} />

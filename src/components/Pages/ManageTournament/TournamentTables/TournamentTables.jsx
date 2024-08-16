@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import iconEdit from "@assets/images/Tournaments/iconEdit.svg";
+import styles from '../ManageTournament.module.css';
+import iconEdit from "../../../../assets/images/Tournaments/iconEdit.svg";
 import { tableApi } from "../../../../api/tableApi";
 import Alert from "../../../Alert/Alert";
 
@@ -176,7 +177,7 @@ function TournamentTables({ idTournament, numberTables }) {
 
             {isModalOpen && (
                 <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-                    <div className="rounded-lg p-6 w-96 bgModal">
+                    <div className={`rounded-lg p-6 w-96 ${styles.bgModal}`}>
                         <h2 className="text-2xl font-semibold mb-4">Thêm bàn</h2>
                         <div className="mb-4">
                             <label className="block text-sm font-medium text-white mb-2">Tên bàn</label>
@@ -220,7 +221,7 @@ function TournamentTables({ idTournament, numberTables }) {
 
             {isEditModalOpen && (
                 <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-                    <div className="rounded-lg p-6 w-96 bgModal">
+                    <div className={`rounded-lg p-6 w-96 ${styles.bgModal}`}>
                         <h2 className="text-2xl font-semibold mb-4">Chỉnh sửa bàn</h2>
                         <div className="mb-4">
                             <label className="block text-sm font-medium text-white mb-2">Tên bàn</label>

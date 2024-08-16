@@ -1,6 +1,6 @@
 import { Button } from "../../common/Button";
-import button_contact from '@assets/images/HomePage/Contact/button_contact.svg';
-import donors from '@assets/images/HomePage/Contact/Donors.png';
+import button_contact from '../../../assets/images/HomePage/Contact/button_contact.svg';
+import donors from '../../../assets/images/HomePage/Contact/Donors.png';
 
 const images = {
     button_contact,

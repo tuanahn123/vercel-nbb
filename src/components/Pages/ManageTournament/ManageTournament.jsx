@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import SidebarTournaments from "./Sidebar/SidebarTournaments";
-import bgManage from '@assets/images/Tournaments/bg-manage.svg';
-import iconEdit from '@assets/images/Tournaments/iconEdit.svg';
-import iconEye from '@assets/images/Tournaments/iconEye.svg';
+import styles from './ManageTournament.module.css';
+import bgManage from '../../../assets/images/Tournaments/bg-manage.svg';
+import iconEdit from '../../../assets/images/Tournaments/iconEdit.svg';
+import iconEye from '../../../assets/images/Tournaments/iconEye.svg';
 import tournamentApi from '../../../api/tournamentApi';
 import { Link, useNavigate } from 'react-router-dom';
 import path from '../../../constants/path';
@@ -47,7 +48,7 @@ function ManageTournaments() {
     <div className="flex bg-[#081028] min-h-screen">
       <SidebarTournaments />
       <div
-        className={`flex-1 mx-auto md:px-5 pt-10 overflow-auto`}
+        className={`flex-1 mx-auto md:px-5 pt-10 overflow-auto ${styles.background}`}
         style={{
           backgroundImage: `url(${bgManage})`
         }}
@@ -67,7 +68,7 @@ function ManageTournaments() {
           {tournaments.length === 0 ? (
             <div className="text-center text-white text-lg">Chưa có giải đấu nào</div>
           ) : (
-            <div className='scrollableTable'>
+            <div className={styles.scrollableTable}>
               <table className="mb-2 sm:text-sm xs:text-xs">
                 <thead>
                   <tr className="border-b">

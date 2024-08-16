@@ -1,7 +1,7 @@
-import product1 from '@assets/images/HomePage/Shop/product1.svg'
-import product2 from '@assets/images/HomePage/Shop/product2.svg'
-import product3 from '@assets/images/HomePage/Shop/product3.svg'
-import product4 from '@assets/images/HomePage/Shop/product4.svg'
+import product1 from '../../../assets/images/HomePage/Shop/product1.svg'
+import product2 from '../../../assets/images/HomePage/Shop/product2.svg'
+import product3 from '../../../assets/images/HomePage/Shop/product3.svg'
+import product4 from '../../../assets/images/HomePage/Shop/product4.svg'
 
 const images = {
     product1,

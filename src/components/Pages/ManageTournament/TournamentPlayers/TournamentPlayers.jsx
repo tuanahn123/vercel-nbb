@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import iconDelete from "@assets/images/Tournaments/iconDelete.svg";
+import iconDelete from "../../../../assets/images/Tournaments/iconDelete.svg";
+import styles from "../ManageTournament.module.css";
 import tournamentApi from "../../../../api/tournamentApi";
 import Alert from "../../../Alert/Alert";
 
@@ -163,7 +164,7 @@ function TournamentPlayers(props) {
 
             {isModalOpen && (
                 <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-                    <div className="rounded-lg p-6 w-96 bgModal">
+                    <div className={`rounded-lg p-6 w-96 ${styles.bgModal}`}>
                         <h2 className="text-2xl font-semibold mb-4">Thêm người chơi</h2>
                         <div className="mb-4">
                             <label className="block text-sm font-medium text-white mb-2">Tên</label>
