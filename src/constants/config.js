@@ -1,5 +1,5 @@
 const config = {
-  baseUrl: 'https://nbbliveball.onrender.com/api'
+  baseUrl: `${import.meta.env.VITE_API_URL}/api`
 }
 
 export default config
