@@ -1,9 +1,9 @@
 import React from "react";
-import imgClb from '../../../../assets/images/ClubList/imgClb.svg';
+import imgClb from '~/assets/images/ClubList/imgClb.svg';
 import RatingStar from "../RatingStar/RatingStar";
-import { generateNameId } from "../../../../utils/utils"
+import { generateNameId } from "~/utils/utils"
 import { Link } from "react-router-dom";
-import path from "../../../../constants/path";
+import path from "~/constants/path";
 
 function CardClb(props) {
     const { dataCard } = props;

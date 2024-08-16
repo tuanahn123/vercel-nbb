@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import iconDelete from "../../../../assets/images/Tournaments/iconDelete.svg";
-import tournamentApi from "../../../../api/tournamentApi";
+import iconDelete from "~/assets/images/Tournaments/iconDelete.svg";
+import tournamentApi from "~/api/tournamentApi";
 import Alert from "../../../Alert/Alert";
 
 function TournamentPlayers(props) {
