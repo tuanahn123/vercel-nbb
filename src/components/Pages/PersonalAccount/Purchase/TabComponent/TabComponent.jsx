@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import '/src/../assets/styles/PersonalAccount/TabComponent.scss';
+import '~/../assets/styles/PersonalAccount/TabComponent.scss';
 
 export const TabComponent = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(tabs[0].label);
