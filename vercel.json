@@ -13,11 +13,5 @@
             "src": "/(.*)",
             "dest": "/index.html"
         }
-    ],
-    "redirects": [
-        {
-            "source": "/projects/nbb-clients/assets/:filePath",
-            "permanent": true
-        }
     ]
 }
