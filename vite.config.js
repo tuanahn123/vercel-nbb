@@ -13,10 +13,7 @@ export default defineConfig({
     devSourcemap: true
   },
   build: {
-    sourcemap: true,
-    rollupOptions: {
-      // Rollup plugins configuration
-    }
+    sourcemap: false
   },
   assetsInclude: ['**/*.svg'], // Ensure SVGs are included as assets
   server: {
