@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy, faHome, faBars, faTimes, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
-import path from '/src/constants/path';
-import { clearLS } from '/src/utils/auth';
+import path from '../../../../constants/path';
+import { clearLS } from '../../../../utils/auth';
 
 const SidebarTournaments = () => {
     const [isOpen, setIsOpen] = useState(window.innerWidth >= 768); // Default based on screen width

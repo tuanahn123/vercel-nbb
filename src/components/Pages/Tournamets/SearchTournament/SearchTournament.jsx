@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Input from "../../../Input/Input";
 import InputSelect from "../../../InputSelect/InputSelect";
 import Button from "../../../Button/Button";
-import Ball1 from "/src/assets/images/ClubList/ball1.svg";
-import Ball2 from "/src/assets/images/ClubList/ball2.svg";
-import tournamentApi from "/src/api/tournamentApi";
+import Ball1 from "../../../../assets/images/ClubList/ball1.svg";
+import Ball2 from "../../../../assets/images/ClubList/ball2.svg";
+import tournamentApi from "../../../../api/tournamentApi";
 
 function SearchTournament({ setTournaments }) { // Nhận setTournaments từ props
     const [searchName, setSearchName] = useState("");

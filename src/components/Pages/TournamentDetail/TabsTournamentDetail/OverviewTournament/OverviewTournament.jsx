@@ -1,9 +1,9 @@
 import React from "react";
-import bgRank1 from "/src/../assets/images/TournamentDetail/bgRank1.svg";
-import bgRank2 from "/src/../assets/images/TournamentDetail/bgRank2.svg";
-import bgRank3 from "/src/../assets/images/TournamentDetail/bgRank3.svg";
-import avatar from "/src/../assets/images/TournamentDetail/avt.svg";
-import { formatDate, formatPrice } from "/src/../utils/utils";
+import bgRank1 from "../../../../../assets/images/TournamentDetail/bgRank1.svg";
+import bgRank2 from "../../../../../assets/images/TournamentDetail/bgRank2.svg";
+import bgRank3 from "../../../../../assets/images/TournamentDetail/bgRank3.svg";
+import avatar from "../../../../../assets/images/TournamentDetail/avt.svg";
+import { formatDate, formatPrice } from "../../../../../utils/utils";
 
 
 export const OverviewTournament = (props) => {
