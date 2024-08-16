@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import SidebarTournaments from "./Sidebar/SidebarTournaments";
-import styles from './ManageTournament.module.css';
 import bgManage from '../../../assets/images/Tournaments/bg-manage.svg';
 import iconEdit from '../../../assets/images/Tournaments/iconEdit.svg';
 import iconEye from '../../../assets/images/Tournaments/iconEye.svg';
@@ -48,7 +47,7 @@ function ManageTournaments() {
     <div className="flex bg-[#081028] min-h-screen">
       <SidebarTournaments />
       <div
-        className={`flex-1 mx-auto md:px-5 pt-10 overflow-auto ${styles.background}`}
+        className={`flex-1 mx-auto md:px-5 pt-10 overflow-auto`}
         style={{
           backgroundImage: `url(${bgManage})`
         }}
@@ -68,7 +67,7 @@ function ManageTournaments() {
           {tournaments.length === 0 ? (
             <div className="text-center text-white text-lg">Chưa có giải đấu nào</div>
           ) : (
-            <div className={styles.scrollableTable}>
+            <div className='scrollableTable'>
               <table className="mb-2 sm:text-sm xs:text-xs">
                 <thead>
                   <tr className="border-b">

@@ -7,7 +7,7 @@ const path = {
   error: '/error',
   purchase: '/purchase',
   matchTable: '/match-table',
-  // verification: '/verification',
+  verification: '/verification',
   aboutPage: '/about-page',
   // clubs: '/clubs',
   clbDetail: '/clubs/:idClb', // Đường dẫn với tham số idClb
