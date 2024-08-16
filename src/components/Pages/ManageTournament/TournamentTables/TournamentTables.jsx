@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from '../ManageTournament.module.css';
-import iconEdit from "@assets/images/Tournaments/iconEdit.svg";
+import iconEdit from "../../../../assets/images/Tournaments/iconEdit.svg";
 import { tableApi } from "../../../../api/tableApi";
 import Alert from "../../../Alert/Alert";
 
