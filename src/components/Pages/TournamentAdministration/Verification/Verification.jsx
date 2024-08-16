@@ -1,7 +1,7 @@
 
-// import blueBtn from '../../../../assets/images/Verification/Blue-btn.svg'
-// import '../../../../assets/styles/MatchTable/MatchTable.scss'
-// import '../../../../assets/styles/Verification/Verification.scss'
+// import blueBtn from '@assets/images/Verification/Blue-btn.svg'
+// import '@assets/styles/MatchTable/MatchTable.scss'
+// import '@assets/styles/Verification/Verification.scss'
 // import { Button } from '../../../common/Button'
 // import { Footer } from '../../../common/Footer'
 // import Navbar from '../../../common/Navbar'
