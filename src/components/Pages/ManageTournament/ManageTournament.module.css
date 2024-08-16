@@ -36,6 +36,6 @@
   filter: blur(113.5px);
 }
 .bgModal {
-  background: url('../../../assets/images/Tournaments/bgModal.svg') no-repeat center center;
+  background: url('/src/assets/images/Tournaments/bgModal.svg') no-repeat center center;
   background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
 }

@@ -10,17 +10,19 @@
     ],
     "routes": [
         {
-            "src": "/src/assets/(.*)",
-            "dest": "/src/assets/$1"
-        },
-        {
-            "src": "/src(.*)",
+            "src": "/(.*)",
             "dest": "/index.html"
         }
     ],
-    "git": {
-        "deploymentEnabled": {
-            "main": false
+    "redirects": [
+        {
+            "source": "/projects/nbb-clients/assets/:filePath",
+            "permanent": true
         }
-    }
+    ],
+    "rewrites": [
+        {
+            "source": "/projects/nbb-clients"
+        }
+    ]
 }
