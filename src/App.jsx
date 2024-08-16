@@ -8,7 +8,7 @@ import Loading from './components/Loading/Loading';
 const Home = React.lazy(() => import('./components/Pages/HomePage/HomePage'));
 // const Purchase = React.lazy(() => import('./components/Pages/PersonalAccount/Purchase/Purchase'));
 const MatchTable = React.lazy(() => import('./components/Pages/TournamentAdministration/MatchTable/MatchTable'));
-const Verification = React.lazy(() => import('./components/Pages/TournamentAdministration/Verification/Verification'));
+// const Verification = React.lazy(() => import('./components/Pages/TournamentAdministration/Verification/Verification'));
 const Login = React.lazy(() => import('./components/Pages/Login/Login'));
 const Error = React.lazy(() => import('./components/Pages/Error/Error'));
 const AboutPage = React.lazy(() => import('./components/Pages/AboutPage/AboutPage'));
@@ -49,7 +49,7 @@ function App() {
             <Route path={path.editTournament} element={<PrivateRoute element={<EditTournament />} roles={['club']} />} />
             <Route path={path.createBranch} element={<PrivateRoute element={<CreateBranch />} roles={['club']} />} />
             <Route path={path.matchTable} element={<PrivateRoute element={<MatchTable />} roles={['club']} />} />
-            <Route path={path.verification} element={<PrivateRoute element={<Verification />} roles={['club']} />} />
+            {/* <Route path={path.verification} element={<PrivateRoute element={<Verification />} roles={['club']} />} /> */}
             <Route path={path.manageTournaments} element={<PrivateRoute element={<ManageTournaments />} roles={['club']} />} />
             <Route path={path.manageTournamentDetail} element={<PrivateRoute element={<ManageTournamentDetail />} roles={['club']} />} />
             <Route path={path.tournamentPlayers} element={<PrivateRoute element={<TournamentPlayers />} roles={['club']} />} />
