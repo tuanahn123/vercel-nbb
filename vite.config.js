@@ -8,14 +8,10 @@ export default defineConfig({
   css: {
     devSourcemap: true
   },
-  resolve: {
-    alias: {
-      '@assets': path.resolve(__dirname, 'src/assets')
-    }
-  },
   build: {
     sourcemap: true
   },
+  assetsInclude: ['**/*.svg'], // Ensure SVG files are included in the build
   rewrites: [{ source: '/(.*)', destination: '/' }],
   server: {
     port: 3000
