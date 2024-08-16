@@ -1,5 +1,5 @@
 import React from "react";
-import Star from '../../../../assets/images/ClubList/star.svg';
+import Star from '/src/assets/images/ClubList/star.svg';
 
 function StarRating({ rating }) {
     const renderStars = () => {

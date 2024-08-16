@@ -1,4 +1,4 @@
-import '../../../../App.css'
+import '/src/App.css'
 import { Link } from 'react-router-dom'
 const getGoogleAuthUrl = () => {
   const { VITE_GOOGLE_CLIENT_ID, VITE_GOOGLE_REDIRECT_URI } = import.meta.env
