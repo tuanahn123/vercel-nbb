@@ -74,4 +74,45 @@
   input[type='number'] {
     -moz-appearance: textfield;
   }
+  /* ManageTournaments.module.css */
+  .scrollableTable {
+    overflow-x: auto;
+    max-height: 100vh; /* Điều chỉnh chiều cao nếu cần */
+    position: relative;
+  }
+
+  .scrollableTable table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .scrollableTable th,
+  .scrollableTable td {
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  /* Custom scrollbar */
+  .scrollableTable::-webkit-scrollbar {
+    background-color: none;
+    height: 8px;
+    width: 8px;
+    margin-top: 15px;
+  }
+
+  .scrollableTable::-webkit-scrollbar-thumb {
+    background: #383d4d;
+    border-radius: 99em;
+    border: 6px solid none;
+  }
+  .bg-manage {
+    background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%),
+      url(<path-to-image>) lightgray -181.311px -132.326px / 125.926% 118.056% no-repeat;
+    filter: blur(113.5px);
+  }
+  .bgModal {
+    background: url('/src/assets/images/Tournaments/bgModal.svg') no-repeat center center;
+    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
+  }
 }

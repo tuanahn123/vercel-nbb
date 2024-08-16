@@ -50,7 +50,7 @@ function  TournamentDetail() {
    return (         
         <div className="min-h-screen">
             <Navbar />
-            <div className=" mx-auto my-14" >
+            <div className="container mx-auto my-14" >
                 <div className="text-center text-[#fff] md:text-3xl lg:text-4xl text-lg sm:text-xl font-sora font-semibold">
                 <div className="text-center text-[#fff] md:text-3xl lg:text-4xl text-lg sm:text-xl font-sora font-semibold">
                     {tournaments && tournaments.name ? tournaments.name : 'Tên giải đấu không có'}

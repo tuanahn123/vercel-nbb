@@ -6,7 +6,7 @@ import { Footer } from "../../common/Footer";
 import tournamentApi from "../../../api/tournamentApi";
 import Loading from "../../Loading/Loading";
 
-function Tournaments() {
+export default function Tournaments() {
     const [tournaments, setTournaments] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -54,5 +54,3 @@ function Tournaments() {
         </div>
     );
 }
-
-export default Tournaments;

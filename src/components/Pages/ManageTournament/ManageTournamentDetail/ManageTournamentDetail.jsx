@@ -4,70 +4,71 @@ import { Tab, Tabs } from '../../TournamentDetail/TabsTournamentDetail/TabsTourn
 import TournamentPlayers from '../TournamentPlayers/TournamentPlayers'
 import TournamentInformation from '../TournamentInformation/TournamentInformation'
 import { Link, useParams } from 'react-router-dom'
-import path from '../../../../constants/path'
-import { getIdFromNameId } from '../../../../utils/utils'
-import tournamentApi from '../../../../api/tournamentApi'
+import path from '~/constants/path'
+import { getIdFromNameId } from '~/utils/utils'
+import tournamentApi from '~/api/tournamentApi'
 import { useEffect, useState } from 'react'
 import TournamentTables from '../TournamentTables/TournamentTables'
 import CreateBranch from '../../TournamentAdministration/CreateBranch/CreateBranch'
-
+import Loading from '../../../Loading/Loading';
 function ManageTournamentDetail() {
-  const idTournament = getIdFromNameId(useParams().idTournament)
-  const [tournaments, setTournaments] = useState(null)
-  const [players, setPlayers] = useState([])
+  const idTournament = getIdFromNameId(useParams().idTournament);
+const [tournaments, setTournaments] = useState(null);
+const [players, setPlayers] = useState([]);
+const [loading, setLoading] = useState(true);
 
-  useEffect(() => {}, [tournaments])
+useEffect(() => {
+  if (!idTournament) return;
 
-  useEffect(() => {}, [players])
+  let isMounted = true;
 
-  useEffect(() => {
-    if (!idTournament) return
-
-    let isMounted = true
-
-    const fetchData = async () => {
-      try {
-        const [tournamentResponse, playersResponse] = await Promise.all([
-          tournamentApi.getTournamentById(idTournament),
-          tournamentApi.getAllPlayerInTournament(idTournament)
-        ])
-
-        if (isMounted) {
-          setTournaments(tournamentResponse.data.metadata)
-          setPlayers(playersResponse.data.metadata)
-        }
-      } catch (error) {
-        if (isMounted) {
-          console.error('Failed to fetch data', error)
-        }
-      }
-    }
-
-    fetchData()
-
-    return () => {
-      isMounted = false
-    }
-  }, [idTournament])
-
-  // Hàm để cập nhật lại thông tin giải đấu và danh sách người chơi
-  const handlePlayersChange = async () => {
+  const fetchData = async () => {
     try {
       const [tournamentResponse, playersResponse] = await Promise.all([
         tournamentApi.getTournamentById(idTournament),
         tournamentApi.getAllPlayerInTournament(idTournament)
-      ])
+      ]);
 
-      setTournaments(tournamentResponse.data.metadata)
-      setPlayers(playersResponse.data.metadata)
+      if (isMounted) {
+        setTournaments(tournamentResponse.data.metadata);
+        setPlayers(playersResponse.data.metadata);
+      }
     } catch (error) {
-      console.error('Failed to update players and tournament data', error)
+      console.error('Failed to fetch data', error);
+    } finally {
+      if (isMounted) setLoading(false);
     }
-  }
+  };
 
-  if (!tournaments) {
-    return <div>Loading...</div>
+  fetchData();
+
+  return () => {
+    isMounted = false;
+  };
+}, [idTournament]);
+
+// Hàm để cập nhật lại thông tin giải đấu và danh sách người chơi
+const handlePlayersChange = async () => {
+  setLoading(true); // Bắt đầu lại quá trình loading
+  try {
+    const [tournamentResponse, playersResponse] = await Promise.all([
+      tournamentApi.getTournamentById(idTournament),
+      tournamentApi.getAllPlayerInTournament(idTournament)
+    ]);
+
+    setTournaments(tournamentResponse.data.metadata);
+    setPlayers(playersResponse.data.metadata);
+  } catch (error) {
+    console.error('Failed to update players and tournament data', error);
+  } finally {
+    setLoading(false); // Kết thúc quá trình loading
   }
+};
+
+if (loading) {
+  return <Loading />;
+}
+
 
   return (
     <div className='flex flex-col bg-[#081028] min-h-screen'>
@@ -79,7 +80,7 @@ function ManageTournamentDetail() {
           {tournaments.name}
         </div>
       </div>
-      <div className='flex-1 px-5 overflow-auto mx-auto'>
+      <div className='container px-5 mx-auto'>
         <div className='grid grid-cols-12 justify-center w-full'>
           <div className='col-span-12'>
             <Tabs>

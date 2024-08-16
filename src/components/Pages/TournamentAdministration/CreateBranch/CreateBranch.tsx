@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Bracket, IRoundProps, ISeedProps, Seed, SeedItem, SeedTeam } from 'react-brackets'
-import http from '../../../../utils/http'
-import config from '../../../../constants/config'
+import http from '~/utils/http'
+import config from '~/constants/config'
 import Modal from 'react-modal'
 import screenfull from 'screenfull'
 import { toPng } from 'html-to-image'
@@ -505,7 +505,7 @@ const CreateBranch = ({ idTournament }) => {
       console.log('Shuffle Stage Response:', response.data)
 
       if (!response || !response.data) {
-        throw new Error('Dữ liệu phản hồi không hợp lệ.')
+        throw new Error('Hãy bắt đầu giải')
       }
 
       await fetchData()
