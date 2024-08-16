@@ -1,8 +1,8 @@
-import name_logo from '../../../assets/images/HomePage/Content/name_logo.svg'
-import image_header from '../../../assets/images/HomePage/Content/image_header.svg'
-import video from '../../../assets/images/HomePage/Content/video.svg'
-import button_content from '../../../assets/images/HomePage/Content/button_content.svg'
-import button_match from '../../../assets/images/HomePage/Content/button_match.svg'
+import name_logo from '@assets/images/HomePage/Content/name_logo.svg'
+import image_header from '@assets/images/HomePage/Content/image_header.svg'
+import video from '@assets/images/HomePage/Content/video.svg'
+import button_content from '@assets/images/HomePage/Content/button_content.svg'
+import button_match from '@assets/images/HomePage/Content/button_match.svg'
 import { Button } from '../../common/Button'
 
 const images = {

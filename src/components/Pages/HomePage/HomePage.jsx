@@ -1,5 +1,5 @@
 import Navbar from '../../common/Navbar'
-import background from '../../../assets/images/HomePage/background.png'
+import background from '@assets/images/HomePage/background.png'
 import Introduce from './Introduce'
 import Content from './Content'
 import Service from './Service'

@@ -1,12 +1,12 @@
-import edit from '../../../../assets/images/PersonalAccount/edit.svg'
-import avatar from '../../../../assets/images/PersonalAccount/avatar-account.png'
-import clock from '../../../../assets/images/PersonalAccount/clock.png'
-import product from '../../../../assets/images/PersonalAccount/product.png'
-import delivering from '../../../../assets/images/PersonalAccount/delivering.png'
-import delivered from '../../../../assets/images/PersonalAccount/delivered.png'
-import cancelled from '../../../../assets/images/PersonalAccount/cancelled.png'
+import edit from '../@assets/images/PersonalAccount/edit.svg'
+import avatar from '../@assets/images/PersonalAccount/avatar-account.png'
+import clock from '../@assets/images/PersonalAccount/clock.png'
+import product from '../@assets/images/PersonalAccount/product.png'
+import delivering from '../@assets/images/PersonalAccount/delivering.png'
+import delivered from '../@assets/images/PersonalAccount/delivered.png'
+import cancelled from '../@assets/images/PersonalAccount/cancelled.png'
 import {TabComponent} from "./TabComponent/TabComponent";
-import '../../../../assets/styles/PersonalAccount/Purchase.scss';
+import '../@assets/styles/PersonalAccount/Purchase.scss';
 import { Footer } from "../../../common/Footer";
 import Navbar from "../../../common/Navbar";
 

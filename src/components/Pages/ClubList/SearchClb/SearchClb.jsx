@@ -3,8 +3,8 @@ import Input from "../../../Input/Input";
 import InputSelect from "../../../InputSelect/InputSelect";
 import InputTime from "../../../InputTime/InputTime";
 import Button from "../../../Button/Button";
-import Ball1 from '../../../../assets/images/ClubList/ball1.svg';
-import Ball2 from '../../../../assets/images/ClubList/ball2.svg';
+import Ball1 from '../@assets/images/ClubList/ball1.svg';
+import Ball2 from '../@assets/images/ClubList/ball2.svg';
 
 function SearchClb() {
   return (

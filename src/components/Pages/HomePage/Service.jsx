@@ -1,7 +1,7 @@
-import service1 from '../../../assets/images/HomePage/service/service1.svg'
-import service2 from '../../../assets/images/HomePage/service/service2.svg'
-import service3 from '../../../assets/images/HomePage/service/service3.svg'
-import service4 from '../../../assets/images/HomePage/service/service4.svg'
+import service1 from '@assets/images/HomePage/service/service1.svg'
+import service2 from '@assets/images/HomePage/service/service2.svg'
+import service3 from '@assets/images/HomePage/service/service3.svg'
+import service4 from '@assets/images/HomePage/service/service4.svg'
 
 const images = {
     service1,

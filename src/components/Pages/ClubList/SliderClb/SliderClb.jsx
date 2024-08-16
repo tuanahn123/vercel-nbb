@@ -3,8 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import CardClb from "../CardClb/CardClb";
-import ArrowNext from '../../../../assets/images/ClubList/nextArrow.svg';
-import ArrowPrev from '../../../../assets/images/ClubList/prevArrow.svg';
+import ArrowNext from '../@assets/images/ClubList/nextArrow.svg';
+import ArrowPrev from '../@assets/images/ClubList/prevArrow.svg';
 
 function SliderClb(props) {
   const { CardDatas } = props;

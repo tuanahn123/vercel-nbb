@@ -6,14 +6,14 @@ import SliderClb from "../ClubList/SliderClb/SliderClb";
 import Button from "../../Button/Button";
 import Navbar from "../../common/Navbar";
 import { Footer } from "../../common/Footer";
-import IconLocation from "../../../assets/images/ClbDetail/icon_location.svg";
-import IconClock from "../../../assets/images/ClbDetail/icon_clock.svg";
-import IconTelephone from "../../../assets/images/ClbDetail/icon_telephone.svg";
-import ImgIntroClb1 from "../../../assets/images/ClbDetail/img1.svg";
-import ImgIntroClb2 from "../../../assets/images/ClbDetail/img2.svg";
-import ImgIntroClb3 from "../../../assets/images/ClbDetail/img3.svg";
-import ImgIntroClb4 from "../../../assets/images/ClbDetail/img4.svg";
-import ImgIntroClb5 from "../../../assets/images/ClbDetail/img5.svg";
+import IconLocation from "@assets/images/ClbDetail/icon_location.svg";
+import IconClock from "@assets/images/ClbDetail/icon_clock.svg";
+import IconTelephone from "@assets/images/ClbDetail/icon_telephone.svg";
+import ImgIntroClb1 from "@assets/images/ClbDetail/img1.svg";
+import ImgIntroClb2 from "@assets/images/ClbDetail/img2.svg";
+import ImgIntroClb3 from "@assets/images/ClbDetail/img3.svg";
+import ImgIntroClb4 from "@assets/images/ClbDetail/img4.svg";
+import ImgIntroClb5 from "@assets/images/ClbDetail/img5.svg";
 
 function ClbDetail() {
   const imgDatas = [

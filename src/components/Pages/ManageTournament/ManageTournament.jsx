@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import SidebarTournaments from "./Sidebar/SidebarTournaments";
-import bgManage from '../../../assets/images/Tournaments/bg-manage.svg';
-import iconEdit from '../../../assets/images/Tournaments/iconEdit.svg';
-import iconEye from '../../../assets/images/Tournaments/iconEye.svg';
+import bgManage from '@assets/images/Tournaments/bg-manage.svg';
+import iconEdit from '@assets/images/Tournaments/iconEdit.svg';
+import iconEye from '@assets/images/Tournaments/iconEye.svg';
 import tournamentApi from '../../../api/tournamentApi';
 import { Link, useNavigate } from 'react-router-dom';
 import path from '../../../constants/path';
