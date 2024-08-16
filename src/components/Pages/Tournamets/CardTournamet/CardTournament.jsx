@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import imgTournament from "../@assets/images/Tournaments/imgTournament.svg";
-import iconDate from "../@assets/images/Tournaments/iconDate.svg";
-import iconLocation from "../@assets/images/Tournaments/iconLocation.svg";
-import iconPeopleGroup from "../@assets/images/Tournaments/iconPeopleGroup.svg";
-import iconCompetion from "../@assets/images/Tournaments/iconCompetion.svg";
-import iconComplete from "../@assets/images/Tournaments/iconComplete.svg";
-import iconLoading from "../@assets/images/Tournaments/iconLoading.svg";
-import bgLoading from "../@assets/images/Tournaments/bgLoading.svg";
-// import iconMedal from "../@assets/images/Tournaments/iconMedal.svg";
+import imgTournament from "@assets/images/Tournaments/imgTournament.svg";
+import iconDate from "@assets/images/Tournaments/iconDate.svg";
+import iconLocation from "@assets/images/Tournaments/iconLocation.svg";
+import iconPeopleGroup from "@assets/images/Tournaments/iconPeopleGroup.svg";
+import iconCompetion from "@assets/images/Tournaments/iconCompetion.svg";
+import iconComplete from "@assets/images/Tournaments/iconComplete.svg";
+import iconLoading from "@assets/images/Tournaments/iconLoading.svg";
+import bgLoading from "@assets/images/Tournaments/bgLoading.svg";
+// import iconMedal from "@assets/images/Tournaments/iconMedal.svg";
 import path from "../../../../constants/path";
 import { formatDate, generateNameId } from "../../../../utils/utils";
 
