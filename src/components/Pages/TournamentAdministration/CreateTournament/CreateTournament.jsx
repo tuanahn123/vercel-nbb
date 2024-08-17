@@ -1,4 +1,4 @@
-import blueBtn from '~/assets/images/Verification/Blue-btn.svg'
+import blueBtn from '~/assets/images/Verification/blue-btn.svg'
 import loginBG from '~/assets/images/Btn/bg-login.svg'
 import bgTransparent from '~/assets/images/Btn/bg-transparent.svg'
 import uploadFile from '~/assets/images/CreateTournament/upload-file.png'
