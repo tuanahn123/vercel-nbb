@@ -1,5 +1,5 @@
 
-// import blueBtn from '~/assets/images/Verification/Blue-btn.svg'
+// import blueBtn from '~/assets/images/Verification/blue-btn.svg'
 // import '~/assets/styles/MatchTable/MatchTable.scss'
 // import '~/assets/styles/Verification/Verification.scss'
 // import { Button } from '../../../common/Button'
