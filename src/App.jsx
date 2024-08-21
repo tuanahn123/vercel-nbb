@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./components/PrivateRouters/AuthContext";
 import PrivateRoute from "./components/PrivateRouters/PrivateRouters";
@@ -29,6 +30,7 @@ function App() {
   return (
     <AuthProvider>
       <Router>
+        <SpeedInsights />
         <Suspense fallback={<Loading />}>
           <Routes>
             {/* Public Routes */}            
